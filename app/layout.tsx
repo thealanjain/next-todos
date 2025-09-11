@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import AppThemeProvider from "./theme/theme"
+import { Container } from "react-bootstrap"
 
 export const metadata: Metadata = {
     title: "Create Next App",
@@ -14,7 +15,9 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body>
-                <AppThemeProvider>{children}</AppThemeProvider>
+                <AppThemeProvider>
+                    <Container className="py-3">{children}</Container>
+                </AppThemeProvider>
             </body>
         </html>
     )
