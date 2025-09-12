@@ -1,3 +1,5 @@
+"use client"
+
 import Link from "next/link"
 import { Button, Col, Form, Row } from "react-bootstrap"
 
